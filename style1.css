@@ -1,0 +1,126 @@
+/* style.css */
+
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+  font-size: 40px;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+h2 {
+  color: #666;
+  font-size: 25px;
+  margin: 20px;
+}
+
+h3 {
+  color: #ed9a67;
+  font-size:22px;
+  margin: 20px;
+}
+
+h4 {
+  color: #000000;
+  font-size:22px;
+  margin: 20px;
+}
+
+p {
+  margin: 20px;
+  color: #333;
+  font-size: 20px;
+  line-height: 1.5;
+  width:800;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+  text-align: center;
+}
+
+a:hover {
+  color: #ed9a67;
+  text-decoration: transparent;
+  text-decoration-color: #999;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  color: #333;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.kotakLogin{
+	width: 500px;
+	background: white;
+	/*meletakkan form ke tengah*/
+	margin: 50px auto;
+	padding: 40px 50px;
+}
+
+.modul{
+  width: 700px;
+	background: rgb(254, 246, 239);
+	/*meletakkan form ke tengah*/
+	margin: 10px auto;
+	padding: 40px 40px;
+
+  
+}
+
+.login{
+  text-align: center;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="password"] {
+  width:95%;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  background-color: #0066cc;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: transparent;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0052a3;
+}
+
+/* style.css */
+
+.login-form {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
