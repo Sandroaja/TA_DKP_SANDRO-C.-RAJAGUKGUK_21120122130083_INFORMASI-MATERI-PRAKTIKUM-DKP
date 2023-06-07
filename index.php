@@ -167,8 +167,6 @@ if (isset($_GET['logout'])) {
 
            
                 <form action="search.php" method="GET" class="search-form">
-                    <!-- <div class="form-group"> -->
-                        <!-- <label for="search">Cari pengajar:</label> -->
                         <input type="text" id="search" name="search" placeholder="Masukkan nama pengajar">
                         <button type="submit" class="fa fa-search" name="search_box">     
                         </button>
