@@ -62,7 +62,7 @@ $mataKuliah = array(
         'bab' => 2,
         'judul' => 'Pengkondisian',
         'deskripsi' => 'Pengkondisian merupakan suatu pengaturan alur program berdasar kondisi boolean (kondisi benar dan salah) yang dijadikan patokan.',
-        'pengajar' => 'Rafdan: 085799444478 (WA), Refan : 083108414438 (WA)',
+        'pengajar' => 'Muhamad Rafdan Maulana: 085799444478 (WA), Refanda Surya Saputra : 083108414438 (WA)',
         'file' => 'https://drive.google.com/file/d/1Q23VNBuzPqg-FAGr5ew4eJDYFtE99X9F/view?usp=drive_link'
     ),
     array(
@@ -90,7 +90,7 @@ $mataKuliah = array(
         'judul' => 'Object Oriented Programming I',
         'deskripsi' => 'Pemrograman berorientasi objek adalah paradigma pemrograman yang berorientasikan kepada objek yang merupakan suatu metode dalam pembuatan program,
         dengan tujuan untuk menyelesaikan kompleksnya berbagai masalah program yang terus meningkat.',
-        'pengajar' => 'Raihan Maulana (0895601914130), Djie Valencia Santoso (valencia_santoso03)',
+        'pengajar' => 'Muhammad Raihan Maulana (0895601914130), Djie Valencia Santoso (valencia_santoso03)',
         'file' => 'https://drive.google.com/file/d/1b6p88m9UzYd-EpyzvO3l4bkwQe435SEo/view?usp=drive_link    '
     ),
     array(
@@ -99,7 +99,7 @@ $mataKuliah = array(
         'deskripsi' => 'Polymorphism juga dapat diartikan sebagai teknik programming yang  mengarahkan programmer untuk memprogram secara general daripada secara  spesifik.
         Abstraction adalah satu dari  tiga prinsip sentral (Enkapsulasi dan Pewarisan).
         Encapsulation merupakan implementasi penyembunyian informasi  (information hiding).',
-        'pengajar' => 'Syahira Isnaeni Dewi (id line = syr_yr),Shinta (wa: 085742704308)',
+        'pengajar' => 'Syahira Isnaeni Dewi (id line = syr_yr),Shinta Nurrohmah (wa: 085742704308)',
         'file' => 'https://drive.google.com/file/d/1WnfEcOZ7FGVgOJMWmWjnck4HpnhwvKCB/view?usp=drive_link'
     ),
     array(
@@ -157,18 +157,12 @@ $queue->enqueue($selectedBabInfo['pengajar']);
     <title>MODUL <?php echo $selectedBab; ?></title>
     <link rel="stylesheet" type="text/css" href="style1.css">
 </head>
-<body>
+<body>     
     <h1 class="modul">MODUL <?php echo $selectedBab; ?></h1>
     <h2 class="modul">Judul: <?php echo $selectedBabInfo['judul']; ?></h2>
     <h4 class="modul">Pengajar: <?php echo $queue->peek(); ?></h4>
     <p class="modul"><?php echo $selectedBabInfo['deskripsi']; ?></p>
-    <h3><a class="modul" href="<?php echo $selectedBabInfo['file']; ?>" target="_blank">Materi</a></h3>
-
+    <center><h3><a class="modul" href="<?php echo $selectedBabInfo['file']; ?>" target="_blank">Materi</a></h3></center>
     <p class="modul"><a href="index.php">Kembali ke Halaman Utama</a></p>
 </body>
 </html>
-
-
-
-
-
