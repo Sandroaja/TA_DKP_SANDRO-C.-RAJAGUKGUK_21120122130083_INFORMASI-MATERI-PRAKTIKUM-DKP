@@ -1,23 +1,106 @@
 /* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap');
 
-body {
-  background-color: #f2f2f2;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+:root{
+  --main-color:#8e44ad;
+  --red:#e74c3c;
+  --oragen:#f39c12;
+  --white:#fff;
+  --black:#2c3e50;
+  --light-color:#888;
+  --light-bg:#eee;
+  --border:.1rem solid rgba(0,0,0,.2);
+
+}
+*{
+  font-family: 'Nunito', sans-serif;
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  outline: none; border: none;
+  text-decoration: none;
 }
 
+*::selection{
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+*::-webkit-scrollbar{
+  height: .5rem;
+  width: 1rem;
+}
+
+*::-webkit-scrollbar-track{
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb{
+  background-color: var(--main-color);
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+
+}
+body {
+  background-color: var(--light-bg);
+}
+
+section{
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header{
+  background-color: var(--white);
+  border-bottom: var(--border);
+  position: sticky;
+  top: 0;left: 0;right: 0;
+  z-index: 1000;
+}
+
+.header .flex{
+  padding: 1.5rem 2rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .flex .logo{
+  font-size: 4rem;
+  color: var(--black);
+  font-weight: bolder;
+}
+
+.header .flex .search-form {
+  width: 50rem;
+  border-radius: .5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem 2rem;
+  background-color: var(--light-bg);
+}
+
+.header .flex .search-form input {
+  width: 100%;
+  background: none;
+  font-size: 2rpm;
+  color: var(--black);
+}
+
+.header .flex .search-form button{
+  font-size: 2.5rem;
+  color: var(--black);
+  cursor: pointer;
+  background: none;
+}
 .container {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-}
-
-h1 {
-  color: #333;
-  font-size: 40px;
-  margin-bottom: 80px;
-  text-align: center;
 }
 
 h2 {
@@ -82,7 +165,7 @@ label {
   width: 700px;
 	background: rgb(254, 246, 239);
 	/*meletakkan form ke tengah*/
-	margin: 10px auto;
+	margin: 20px auto;
 	padding: 40px 40px;
 
   
